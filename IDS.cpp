@@ -82,3 +82,33 @@ int main() {
 
     return 0;
 }
+
+// Input:
+// The code defines a simple tree structure and performs Iterative Deepening Search on it.
+// The tree is created with a root node containing the value 1, and some child nodes are added.
+
+// Output:
+// The program will output whether the target value is present in the tree or not.
+
+// Sample Tree:
+//       1
+//     /   \
+//    2     3
+//   / \     \
+//  4   5     6
+
+// Output:
+// Target 6 found!
+// Target 6 is present in the tree.
+
+// Explanation:
+// The iterativeDeepeningSearch function iterates through depths from 0 to maxDepth (here, 10).
+// At each depth, it calls the depthLimitedSearch function to check if the target value is present.
+// The depthLimitedSearch function recursively explores the tree up to the specified depth limit.
+
+// In this case, the targetValue is 6, and the search successfully finds it in the tree,
+// and the program outputs that the target is present in the tree.
+
+// Note: The program may not find the target if the maxDepth is not sufficient,
+// but in this example, the target is found at depth 3 (6 is a child of the root's second child).
+

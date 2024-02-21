@@ -90,3 +90,36 @@ int main() {
 
     return 0;
 }
+// Input:
+// The code defines a simple directed graph using adjacency list representation.
+// It performs both Depth-First Search (DFS) with unlimited depth and Depth-Limited Search (DLS).
+
+// Output:
+// The program will output whether the target node is found using DFS with unlimited depth
+// and whether the target node is found using DLS within a specified depth limit.
+
+// Directed Graph:
+//       0
+//      / \
+//     1   2
+//    / \ / \
+//   3   4   5
+//          |
+//          6
+
+// Output:
+// Visiting node: 0
+// Visiting node: 2
+// Visiting node: 6
+// DFS: Target node 6 found using unlimited depth.
+// DLS: Target node 6 not found within depth limit 2.
+
+// Explanation:
+// The program first performs DFS using a stack. It starts from the start node (0),
+// explores the graph, and prints the visited nodes. In this case, it finds the target node 6.
+
+// Then, it performs DLS with a depth limit of 2. The DLS function recursively explores the graph
+// up to the specified depth limit. In this example, the target node 6 is not found within the depth limit.
+
+// Note: The output may vary based on the graph and the specified depth limit.
+
